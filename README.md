@@ -4,7 +4,42 @@
 
 
 
+Introduction to ChIP-seq:-
+Chromatin immunoprecipitation (ChIP) experiments are performed to identify DNA bound to specific (chromatin) proteins of interest. The first step involves isolating the chromatin and immunoprecipitating (IP) fragments with an antibody against the protein of interest. In ChIP-seq, the immunoprecipitated DNA fragments are then sequenced, followed by identification of enriched regions of DNA or peaks. These peak calls can then be used to make biological inferences by determining the associated genomic features and/or over-represented sequence motifs.
 
+Concept:
+Goal: Chromatin immunoprecipitation (ChIP) experiments are performed to identify DNA that binds specific (chromatin) proteins of interest.
+
+Sequencing Workflow Steps:
+
+a. Crosslinked a known protein to strand of DNA in vivo
+
+b. Shear the single DNA stretch into many small segments
+
+c. Select the bound DNA-Protein complex using antibody and isolate only the DNA (Immunoprecipiating).
+
+d. Amplify the DNA with PCR and sequence the DNA segment
+
+Data Analysis Pipeline Steps¶
+a. Sequence Reads
+
+b. Quality Control (Evaluate the quality of the sequencing data) -> Fastqc
+
+c. Alignment to Genome & Result Output to SAM -> Bowtie2
+
+d. SAM to BAM conversion -> Samtools
+
+e. Sorting BAM by Genomic Coordinates and filtering only uniquely mapped reads -> Sambamba
+
+f. Peak Calling (Identify areas in the genome that have been enriched with aligned reads as a consequence of performing a ChIP-Seq experiment) -> MACS
+
+g. Downstream Analysis (annotation of the peaks)
+
+i. Distance from TSS
+
+ii. Genomic Context
+
+iii. Motif Discovery
 
 
 
