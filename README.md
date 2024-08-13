@@ -1,5 +1,6 @@
 # CHIP-Seq-Data-Analysis Workflow
 # CHIP-Seq-Raw-Data-Analysis Workflow 
+
 <img align="right" alt="coding" width ="800" src= "https://hbctraining.github.io/Intro-to-ChIPseq/img/chip_workflow_june2017_step5.png">
 
 
